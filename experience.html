@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      background-color: rgb(255, 255, 255);
+      font-family: Helvetica, sans-serif;
+    }
+    
+    .timeline {
+      position: relative;
+      max-width: 1440px;
+      margin: 0 auto;
+    }
+    
+    .timeline::after {
+      content: '';
+      position: absolute;
+      width: 4px;
+      background-color:   #3f3f3f;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      margin-left: -3px;
+    }
+    
+    .container {
+      padding: 10px 40px;
+      position: relative;
+      background-color: inherit;
+      width: 50%;
+    }
+    
+    .container::after {
+      content: '';
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      right: -17px;
+      background-color:   #ffffff;
+      border: 4px solid     #3f3f3f;
+      top: 15px;
+      border-radius: 50%;
+      z-index: 1;
+    }
+    
+    .left {
+      left: 0;
+    }
+    
+    .right {
+      left: 50%;
+    }
+    
+    .left::before {
+      content: " ";
+      height: 0;
+      position: absolute;
+      top: 22px;
+      width: 0;
+      z-index: 1;
+      right: 30px;
+      border: medium solid rgb(255, 255, 255);
+      border-width: 10px 0 10px 10px;
+      border-color: transparent transparent transparent  #dcbc7c;
+    }
+    
+    .right::before {
+      content: " ";
+      height: 0;
+      position: absolute;
+      top: 22px;
+      width: 0;
+      z-index: 1;
+      left: 30px;
+      border: medium solid white;
+      border-width: 10px 10px 10px 0;
+      border-color: transparent  #dcbc7c;
+    }
+    
+    .right::after {
+      left: -16px;
+    }
+    
+    .content {
+      padding: 20px 30px;
+      background-color:  #dcbc7c;
+      position: relative;
+      border-radius: 6px;
+    }
+    
+    @media screen and (max-width: 600px) {
+      .timeline::after {
+      left: 31px;
+      }
+      
+      .container1 {
+      width: 100%;
+      padding-left: 70px;
+      padding-right: 25px;
+      }
+      
+      .container::before {
+      left: 60px;
+      border: medium solid rgb(202, 226, 227);
+      border-width: 10px 10px 10px 0;
+      border-color: transparent rgb(202, 226, 227)transparent transparent;
+      }
+    
+      .left::after, .right::after {
+      left: 15px;
+      }
+      
+      .right {
+      left: 0%;
+      }
+    }
+    .centered {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+    </style>
+<body>
+  <div class="container1">
+    <img src="C:\Users\User\OneDrive\Documents\分組專修\螢幕擷取畫面 2025-04-07 115917小.png" style="width:100%;">
+    <div class="centered" style="color: rgb(0, 0, 121); font-size: 180px; font-family: monospace; padding-top: 100px;"><b>EXPERIENCE</b></div>
+  </div>
+<p style="padding-left: 100px; padding-right: 100px; font-size: 20px; color: rgb(0, 0, 121); padding-bottom: 100px; padding-top: 80px;"><b><i>自從開始接受教育，我就一直就讀於善美真華德福實驗教育機構。<br><br>華德福教育是基於人智學的一種教育理念，由奧地利學者魯道夫．史代納所創立，該教育以自然教育及藝術教育為主，並支持多元性學習。教師在教學方面以多面向評量個人價值而非定量評量（也就是不用考試啦~），重點在於培養想像力、創造力與個人獨特性。</i></b></p>
+<p style="text-align: right;padding-left: 100px; padding-right: 100px; font-size: 20px; color: rgb(0, 0, 121); padding-bottom: 100px;"><b><i>成為可以定義自己、指導自己生活的人</i></b></p>
+<div class="timeline">
+    <div class="container left">
+      <div class="content">
+        <h1><b><ins>七年級</ins></b></h1>
+        <p style="font-size: 18px; padding-bottom: 10px;"><br>七年級，是我的一個轉淚點，也是我打開自己的開始。<br><br>自從七年級開始學習街舞、開始打籃球，我的生活變得活潑、熱血起來，我自己也似乎因此更加開放、有自信，原本非常害羞內向的我突然之間大膽起來，開始喜歡與大家一起跳舞、主動和球場上認識的朋友交流，雖然在學校沒有跳舞和打籃球的時候會稍微安靜下來，但在課堂上卻也因此積極許多。</p>
+      <img src="C:\Users\User\OneDrive\Documents\分組專修\七年級.png" style="width: 100%;">
+      </div>
+    </div>
+    <div class="container right">
+      <div class="content">
+        <h1><b><ins>八年級</ins></b></h1>
+        <p style="font-size: 18px; padding-bottom: 10px;"><br>八年級，是一個開始嘗試自己興趣的機會，也是發掘自己興趣的開始。<br><br>農場實習和專題對我們來說是八年級最大的兩個任務，我們需要在忙碌研究專題的同時，與全班在農場生活三個禮拜，這不僅考驗我們的自律性，更是全方面的訓練生活技能、自學能力等等。</p>
+        <img src="C:\Users\User\OneDrive\Documents\分組專修\八年級.png" style="width: 100%;">
+      </div>
+    </div>
+    <div class="container left">
+      <div class="content">
+        <h1><b><ins>九年級</ins></b></h1>
+        <p style="font-size: 18px; padding-bottom: 10px;"><br>九年級，是我遇見各種不同人的開始。<br><br>面對即將來臨的高中，我經常想著更開放的生活，和自己到底喜歡什麼科系，幸運的是，剛好就有一個非常好的機會在我眼前被我抓住了，就是華德福論壇，讓我遇見了全台灣的華德福高中生，在那裡我遇見各種專長、個性、興趣的人，聽了很多畢業學長姐的生命故事。很快的，我參加了成功大學的大學生活體驗營，稍微了解了一些我感興趣的科系，也看見不同科系的在校大學生，每個人都帶著自己獨有的氣質，讓我更深入的認識成大。<br>另一方面，我也參加了青少年生城市AI黑客松競賽，在那裡遇見和我們學校完全不同類型的人，他們擅長電腦，感覺他們有種科技感（？）讓我大開眼界。
+        </p>
+      <img src="C:\Users\User\OneDrive\Documents\分組專修\九年級.png" style="width: 100%;">
+      </div>
+    </div>
+    <div class="container right">
+      <div class="content">
+        <h1><b><ins>十年級</ins></b></h1>
+        <p style="font-size: 18px; padding-bottom: 10px;"><br>十年級，是我勇敢嘗試對於任何想做的事情跨出第一步的開始。<br><br>高中一開學，我們首先經歷了山林音樂會，在那裡我就像回到沒有科技的時代，沒有手機手錶，只能依靠身體感受。回到學校後，我似乎因為山林的啟發，突發奇想的成立了籃球社，經歷一系列的成社階段，從尋找工作夥伴、撰寫計劃書、場地申請、課程設計、口頭和海報宣傳、找指導老師到開始第一次社團，在其中有尷尬有突破，成為我第一次的創社經驗。同時我也參與學生自治會擔任副會長，以協助的角度觀察一個團隊的組成，也處理很多內部的事情，這兩個經驗讓我深刻體驗到團體的工作模式與氛圍。<br>在學生自治會與籃球社進行的同時，我也擔任學校梁祝戲劇的女主角之一和道具組組長，不管是主角還是組長，我都在其中學習到很多，包含團隊行動、領導能力、時間管理、情緒表達等等，都是我為自己跨出第一步的證明。</p>
+        <img src="C:\Users\User\OneDrive\Documents\分組專修\十年級.png" style="width:100%">
+      </div>
+    </div>
+</div>
+<div class="menu">
+  <nav>
+    <ul>
+  <li><a href="履歷.html"><b>Home Page</b></a></li>
+  <li><a href="self-introduction.html"><b>Self-Introduction</b></a></li>
+  <li><a href="portfolio.html"><b>Portfolio</b></a></li>
+  <li><a href="about-future.html"><b>About Future</b></a></li>
+</ul>
+</nav>
+</div>
+</body>
+</html>
